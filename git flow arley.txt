@@ -1,0 +1,41 @@
+git pull em todos os  branchs (git checkout branch desejado)
+
+git checkout -b nomeseubranch (dentro do branch que deseja develop ou release)
+git push e copiar u upstream para mandar para o repo
+
+APÓS FAZER O BRANCH, FAZER A ALTERÇÃO QUE PRECISA SER FEITO NO CÓDIGO(salvando Ctrl + s)
+
+salva a alteração no branch criado
+
+depois fazer:
+
+git status pra confirmar se é isso mesmo ou seja o arquivo desejado
+
+git add . para confirmar alteração
+
+git commit -m 'comentario da sua alteração'
+
+git push 
+
+a alteração existira no seu branch agora é mergear para develop --> (git checkout Develop)
+
+estou no meu branch farei um 
+
+git checkout o branch de destino (develop ou release) --> (estou em develop passar para release)
+
+confirmo se navegou para o branch se tudo ok
+git pull para ve se tem alteração
+
+se tiver alteração navego para meu branch e faço o merge 
+
+depois volto pro branch develop ou release e jogo de volta o merge
+
+cao nao tenha os passos acima
+
+git merge nomemeubranch
+
+git push
+
+pronto a alteração estara no develop ou release
+
+depois merger a develop dentro da release

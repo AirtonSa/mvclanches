@@ -1,0 +1,40 @@
+﻿  @model HomeViewModel
+
+<partial name="_Carousel" />
+
+<h2>Os preferidos Da semana</h2>
+<h4>Tá com fome?</h4>
+
+<div class="row">
+    
+ @foreach( var lanche in Model.LanchesPreferidos)
+ {
+
+    <partial name ="_LanchesResumo" for ="@lanche"/>
+
+ }
+
+</div>
+
+
+
+@* <!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Airton Bindá</h1>
+    <button>Click</button>
+    <button id="mouse">Passar</button>
+</body>
+
+</html>
+
+@section Scripts{
+    <script src="~/js/index/index.js">
+        
+    </script>
+};   *@
+
+

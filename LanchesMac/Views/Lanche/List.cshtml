@@ -1,0 +1,15 @@
+﻿@model LancheListViewModels;
+
+    <div>
+        <h2>@Model.CategoriaAtual</h2>
+    </div>
+
+    <div class="Conteiner">
+    <div class="row"> @*definir o uso horizontal de coluna*@
+
+    @foreach(var lanche in Model.Lanche){
+
+       <partial name = "_LanchesResumo" for ="@lanche"> </partial>
+    };
+    </div>
+    </div>
